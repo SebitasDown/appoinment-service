@@ -32,6 +32,6 @@ public class UserRepositoryAdapter implements UserRepository {
 
     @Override
     public boolean existByUsername(String username) {
-        return false;
+        return userRepository.existsByUsername(username);
     }
 }
